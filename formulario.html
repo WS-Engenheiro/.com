@@ -1,3 +1,84 @@
+<?php
+if(isset($_POST['submit']))
+{
+
+/*
+
+    print_r('nome: '. $_POST['nome']);
+ print_r('<br>');
+  print_r('sobrenome: '. $_POST['sobrenome']);
+     print_r('<br>');
+   print_r('usuario: '. $_POST['usuario']);
+   print_r('<br>');
+   print_r('email: '. $_POST['email']);
+   print_r('<br>');
+   print_r('telefone: '. $_POST['telefone']);
+  print_r('<br>');
+   print_r('celular: '. $_POST['celular']);
+  print_r('<br>');
+  print_r('Endereço: '. $_POST['endereco']);
+  print_r('<br>');
+   print_r('pais: '. $_POST['pais']);
+    print_r('<br>');
+  print_r('Estado: '. $_POST['estado']);
+  print_r('<br>');
+  print_r('cep: '. $_POST['cep']);
+  print_r('<br>');
+ 
+  print_r('mesmo_endereco: '. $_POST['mesmo_endereco']);
+  print_r('<br>');
+ 
+  print_r('salvar_informacoes: '. $_POST['salvar_informacoes']);
+  print_r('<br>');
+  
+  print_r('pagamento: '. $_POST['pagamento']);
+  print_r('<br>');
+  
+  print_r('nome_cartao: '. $_POST['nome_cartao']);
+  print_r('<br>');
+  
+  print_r('numero_cartao: '. $_POST['numero_cartao']);
+  print_r('<br>');
+   
+  print_r('ccv: '. $_POST['ccv']);
+  print_r('<br>');
+ 
+
+ 
+*/
+
+    include_once('config.php');
+
+    $nome = $_POST ['nome'];
+    $sobrenome = $_POST['sobrenome'];
+    $usuario = $_POST['usuario'];
+    $email = $_POST['email'];
+    $telefone = $_POST['telefone'];
+    $celular = $_POST['celular'];
+    $endereco = $_POST['endereco'];
+    $pais = $_POST['pais'];
+    $estado = $_POST['estado'];
+    $cep = $_POST['cep'];
+    $mesmo_endereco = $_POST['mesmo_endereco'];
+    $salvar_informacoes = $_POST['salvar_informacoes'];
+    $pagamento = $_POST['pagamento'];
+    $nome_cartao = $_POST['nome_cartao'];
+    $numero_cartao = $_POST['numero_cartao'];
+    $data_expiracao = $_POST['data_expiracao'];
+    $ccv = $_POST['ccv'];
+
+   
+
+    $reset = mysqli_query($conexao, "INSERT INTO cadastro(nome,email,telefone,celular,endereco,pais,estado,cep,mesmo_endereco,salvar_informacoes
+    ,pagamento,nome_cartao,numero_cartao,data_expiracao,ccv) VALUES ('$nome', '$email',
+    '$telefone','$celular','$sexo','$data_nasc','$cidade','$estado','$endereco')");
+ 
+}
+?>
+
+
+
+
 <!doctype html>
 <html lang="pt-br">
   <head>

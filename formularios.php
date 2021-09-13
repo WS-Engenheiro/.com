@@ -208,19 +208,20 @@ if(isset($_POST['submit']))
       </ul>
     </div>
     <div class="col-md-8 order-md-1">
-      <h4 class="mb-3">Endereço de Cobrança</h4>
+      <h4 class="mb-3">Preencha os campos abaixo</h4>
       <form class="needs-validation" novalidate>
         <div class="row">
           <div class="col-md-8 mb-3">
             <label for="nome">Nome Completo</label>
-            <input type="text" class="form-control" id="nome" name="nome" placeholder="" value="" required>
+            <input type="text" class="form-control" id="nome" name="nome" placeholder="" value="" autocomplete="off" value="" required="required" data-mask-reverse="true">
+            <small class="text-muted"> Digite seu nome completo.</small>
             <div class="invalid-feedback">
               É necessário ter o nome válido.
             </div>
           </div>
           <div class="col-md-4 mb-3">
             <label for="data_nasc">Data de Nacimento</label>
-            <input type="date" class="form-control" id="data_nasc" name="data_nasc" placeholder="" value="" required>
+            <input type="date" class="form-control" id="data_nasc" name="data_nasc" placeholder="00/00/0000" value="" autocomplete="off" value="" required="required" data-mask-reverse="true">
             <div class="invalid-feedback">
               É necessário sobrenome válido.
             </div>
@@ -232,65 +233,61 @@ if(isset($_POST['submit']))
             <div class="input-group-prepend">
               <span class="input-group-text">@</span>
             </div>
-            <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Nome do usuário" required>
-            <div class="invalid-feedback" style="width: 100%;">
-              Seu nome de usuário é necessário.
+            <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Nome do usuário" autocomplete="off" value="" required="required" data-mask-reverse="true">
+            <div class="invalid-feedback">
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-8 mb-3">
             <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="Nome@exemplo.com" value="" required>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Nome@exemplo.com" value="" autocomplete="off" value="" required="required" data-mask-reverse="true">
+            <small class="text-muted"> Digite um email válido.</small>
             <div class="invalid-feedback">
-            Por favor, insira um endereço de e-mail válido para atualizações de envio.
+         
             </div>
           </div>
           <div class="col-md-4 mb-3">
             <label for="data_nasc">Senha</label>
-            <input type="text" class="form-control" id="senha" name="senha" placeholder="Digite uma senha" value="" required>
-            <div class="invalid-feedback">
-              É necessário sobrenome válido.
-            </div>
+            <input type="text" class="form-control" id="senha" name="senha" placeholder="" value="" autocomplete="off" value="" required="required" data-mask-reverse="true">
+            <small class="text-muted"> Digite uma senha.</small>
+             
           </div>
         </div>
         <div class="row">
           <div class="col-md-6 mb-3">
             <label for="tel">Telefone <span class="text-muted"></span></label>
             <input id="tel" maxlength="9" class="form-control" type="tel" name="telefone" placeholder="00 0000 0000"data-mask="00 0000-0000" autocomplete="off" value="" data-mask-reverse="true" required>
-            <div class="invalid-feedback">
-              É necessário ter o telefone válido.
-            </div>
+            <small class="text-muted"> Por favor, digite o número do celular válido.</small>
+            
           </div>
           <div class="col-md-6 mb-3">
             <label for="tel">Celular</span></label>
-            <input id="tel" maxlength="12" class="form-control" type="tel" name="celular" placeholder="" data-mask="00 0 0000-0000" autocomplete="off" value="" required="required" data-mask-reverse="true">
-            <div class="invalid-feedback">
-              É necessário ter o celular válido.
-            </div>
+            <input id="tel" maxlength="12" class="form-control" type="tel" name="celular" placeholder="00 0 0000-0000" data-mask="00 0 0000-0000" autocomplete="off" value="" required="required" data-mask-reverse="true">
+            <small class="text-muted"> Por favor, digite o número do celular válido.</small>
           </div>
         </div>
         <div class="mb-3">
           <label for="endereco">Endereço</label>
-          <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Rua Principal, 1234" required>
-          <div class="invalid-feedback">
-            Por favor, digite seu endereço de envio.
-            </div>
+          <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Rua Principal, 1234" autocomplete="off" value="" required="required" data-mask-reverse="true">
+          <small class="text-muted"> Por favor, digite seu endereço de envio.</small>
+         
         </div>
         <div class="row">
           <div class="col-md-4 mb-3">
             <label for="pais">País</label>
-            <select class="custom-select d-block w-100" id="pais" name="pais" required>
+            <select class="custom-select d-block w-100" id="pais" name="pais" autocomplete="off" value="" required="required" data-mask-reverse="true">
               <option value="">Escolher...</option>
               <option>Brasil</option>
             </select>
+            <small class="text-muted">Por favor, selecione o país.</small>
             <div class="invalid-feedback">
               Por favor, selecione um país válido.
             </div>
           </div>
           <div class="col-md-4 mb-3">
             <label for="estado">Estado</label>
-            <select class="custom-select d-block w-100" id="estado" name="estado" required>
+            <select class="custom-select d-block w-100" id="estado" name="estado" autocomplete="off" value="" required="required" data-mask-reverse="true">
               <option value="">Escolher...</option>
               <option > ACRE</option>
 							<option >ALAGOAS</option>
@@ -320,17 +317,14 @@ if(isset($_POST['submit']))
 							<option> SÃO PAULO</option>
 							<option> TOCANTINS</option>
             </select>
-            <div class="invalid-feedback">
-              Por favor, forneça um estado válido.
-              </div>
+            <small class="text-muted">Por favor, selecione um estado.</small>
+          
           </div>
           <div class="col-md-4 mb-3">
             <label for="cep">Cep</label>
-            <input id="cep" name="cep" maxlength="9" class="form-control" type="cep" placeholder="Cep" data-mask="00000-000" autocomplete="off" value="" required="required" data-mask-reverse="true">
-
-            <div class="invalid-feedback">
-              CEP necessário.
-            </div>
+            <input id="cep" name="cep" maxlength="9" class="form-control" type="cep" placeholder="00000-000" data-mask="00000-000" autocomplete="off" value="" required="required" data-mask-reverse="true">
+            <small class="text-muted">Por favor, forneça um cep válido.</small>
+      
           </div>
         </div>
         <hr class="mb-1">
@@ -339,11 +333,11 @@ if(isset($_POST['submit']))
           <div class="custom-control custom-radio">
 
         <input type="radio" id="mesmo_endereco" name="informacoes" value="mesmo_endereco" required autocomplete="off">
-                <label for="mesmo_endereco">Endereço de envio é o mesmo que meu endereço de cobrança.</label>
+                <label for="mesmo_endereco">Endereço de envio e cobrança.</label>
           </div>
           <div class="custom-control custom-radio">
                 <input type="radio" id="salvar_informacoes" name="informacoes" value="salvar_informacoes" required autocomplete="off">
-                <label for="salvar_informacoes">Guarde essas informações para a próxima vez.</label>
+                <label for="salvar_informacoes">Guarde essas informações.</label>
         </div>
         <div class="custom-control custom-radio">
                 <input type="radio" id="nenhuma" name="informacoes" value="nenhuma" required autocomplete="off">
@@ -356,27 +350,27 @@ if(isset($_POST['submit']))
         <div class="d-block my-4">
           <div class="custom-control custom-radio">
                 <input type="radio" id="credito" name="pagamento" value="credito" required autocomplete="off">
-                <label for="credito">Cartão de crédito</label>
+                <label for="credito">Cartão de crédito.</label>
                 <br>
                 <input type="radio" id="debito" name="pagamento" value="debito" required autocomplete="off">
-                <label for="debito">Cartão de débito</label>
+                <label for="debito">Cartão de débito.</label>
                 <br><br>
 
         <div class="row">
           <div class="col-md-6 mb-3">
             <label for="no_cartao">Nome no cartão</label>
             <input type="text" class="form-control" id="no_cartao" name="no_cartao" placeholder="" required>
-            <small class="text-muted">Nome completo como exibido no cartão</small>
+            <small class="text-muted">Nome completo como exibido no cartão.</small>
             <div class="invalid-feedback">
-              Nome no cartão é necessário...
+            
             </div>
           </div>
           <div class="col-md-6 mb-3">
             <label for="nu_cartao">Número do cartão de crédito</label>
             <input id="nu_cartao" maxlength="19" class="form-control" type="nu_cartao" name="nu_cartao" placeholder="" data-mask="0000 0000 0000 0000" autocomplete="off" value="" required="required" data-mask-reverse="true">
-
+            <small class="text-muted">Número completo como exibido no cartão.</small>
             <div class="invalid-feedback">
-              Número do cartão de crédito ...
+             
               </div>
           </div>
         </div>
@@ -384,6 +378,7 @@ if(isset($_POST['submit']))
           <div class="col-md-3 mb-3">
             <label for="d_expira">Expiração</label>
             <input id="d_expira" name="d_expira" maxlength="5" class="form-control" type="d_expira" placeholder="" data-mask="00/00" autocomplete="off" value="" required="required" data-mask-reverse="true">
+            <small class="text-muted">Data de validade como exibido no cartão.</small>
             <div class="invalid-feedback">
               Data de validade necessária
               </div>
@@ -391,6 +386,7 @@ if(isset($_POST['submit']))
           <div class="col-md-3 mb-3">
             <label for="codigo">CVV</label>
             <input id="codigo" name="codigo" maxlength="5" class="form-control" type="codigo" placeholder="" data-mask="0000"  autocomplete="off" value="" required="required" data-mask-reverse="true">
+            <small class="text-muted">Codígo de segurança como exibido no cartão.</small>
             <div class="invalid-feedback">
               Código de segurança necessário
             </div>
@@ -407,7 +403,7 @@ if(isset($_POST['submit']))
   <footer class="my-5 pt-5 text-muted text-center text-small">
 
 <div class="card-body">
-  <a href="index.html" class="btn btn-outline-danger  btn-lg fas fa-hand-pointer" aria-hidden="true"> Voltar para página inicial...</a>
+  <a href="home.php" class="btn btn-outline-danger  btn-lg fas fa-hand-pointer" aria-hidden="true"> Sair da página</a>
 </button>
 
     <p class="mb-1">&copy; Copyright 2020 Wesley Desenvolvedor Web | Todos os direitos reservados.</p>
