@@ -403,7 +403,7 @@ if(isset($_POST['submit']))
   <footer class="my-5 pt-5 text-muted text-center text-small">
 
 <div class="card-body">
-  <a href="home.php" class="btn btn-outline-danger  btn-lg fas fa-hand-pointer" aria-hidden="true"> Sair da página</a>
+  <a href="index.html" class="btn btn-outline-danger  btn-lg fas fa-hand-pointer" aria-hidden="true"> Sair da página</a>
 </button>
 
     <p class="mb-1">&copy; Copyright 2020 Wesley Desenvolvedor Web | Todos os direitos reservados.</p>
