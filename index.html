@@ -1,0 +1,683 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+   integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+   <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+    <meta name="generator" content="Jekyll v4.1.1">
+    
+    <title>Wesley-Desenvolvedor-Web</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="estilo.css" rel="stylesheet">
+    
+<!-- Injecting site-wide to the head -->
+<!-- GetButton.io widget -->
+
+
+<script type="text/javascript">
+  (function () {
+      var options = {
+          facebook: "100036754243412", // Facebook page ID
+          whatsapp: "+5511988574097", // WhatsApp number
+          call_to_action: "Falar com Wesley", // Call to action
+          button_color: "#129BF4", // Color of button
+          position: "right", // Position may be 'right' or 'left'
+          order: "whatsapp,facebook", // Order of buttons
+      };
+      var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+      var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+      s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+      var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+  })();
+</script>
+
+  </head>
+ 
+  <body>
+   
+    <header>
+      
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-white">
+    
+
+    <img src="wesley-removebg-preview.png" alt="building1" width="140" height="140" />
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Página Inicial <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sobre mim.html">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="formularios.html">Formulário</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="album.html">Galeria</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="logins.html">Login</a>
+        </li>
+        </ul>
+      <form class="form-inline mt-2 mt-md-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar" aria-label="pesquisar">
+        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Pesquisar</button>
+      </form>
+    </div>
+  </nav>
+</header>
+<main role="main">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="H.jpg" alt="building1" width="1000" height="249" />
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+        <div class="container">
+          <div class="carousel-caption text-left">
+            <h2>Site para Hotel</h2>
+            <p1> Site criado com as  linguagens de programação e biblioteca mais usada do mercado, site responsivo para qualquer tamanho de tela e com as melhores imagens.</p>          
+                <p><a class="btn btn-lg btn-primary" href="https://www.google.com/search?sxsrf=ALeKk03Lji6u6f7aacWjZRdTuiUe4rg3UQ:1601636098724&source=univ&tbm=isch&q=imagens+hotel+lindo+gratis&sa=X&ved=2ahUKEwjN7eS135XsAhWeHrkGHe5yBKcQjJkEegQIChAB&biw=1366&bih=576" role="button">Veja mais imagens</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="empresa.jpg" alt="building1" width="1000" height="249" />
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+        <div class="container">
+          <div class="carousel-caption">
+            <h2>Site para Escritório</h2>
+            <p2> Site criado com as  linguagens de programação e biblioteca mais usada do mercado, site responsivo para qualquer tamanho de tela e com as melhores imagens.</p>
+              <p><a class="btn btn-lg btn-info" href="https://www.google.com/search?q=imagens+empresas+e+escritorios+gratis&tbm=isch&ved=2ahUKEwjV7_Cd5JXsAhU_BLkGHXTBDToQ2-cCegQIABAA&oq=imagens+empresas+e+escritorios+gratis&gs_lcp=CgNpbWcQAzoGCAAQBxAeOggIABAIEAcQHjoGCAAQCBAeUO3uAljHnwNg9qEDaAFwAHgAgAF-iAG2EpIBBTExLjEymAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=Dgx3X9WwLr-I5OUP9IK30AM&bih=576&biw=1349&hl=pt-BR" role="button">Veja mais imagens</a></p>
+            </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="CHAPEU (1).jpg" alt="building1" width="1000" height="249" />
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+        <div class="container">
+          <div class="carousel-caption text-right">
+            <h2>Site para Universidade</h2>
+            <p3> Site criado com as  linguagens de programação e biblioteca mais usada do mercado, site responsivo para qualquer tamanho de tela e com as melhores imagens.</p>
+              <p><a class="btn btn-lg btn-success" href="https://br.depositphotos.com/stock-photos/universidade-da-brasil.html" role="button">Veja mais imagens</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="avi.jpg" alt="building1" width="1000" height="249" />
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+          <div class="container">
+            <div class="carousel-caption text-right">
+              <h2>Site para Agência <br> Turismo e Viagens</h2>
+              <p4> Site criado com as  linguagens de programação e biblioteca mais usada do mercado, site responsivo para qualquer tamanho de tela e com as melhores imagens.</p>
+              <p><a class="btn btn-lg btn-warning" href="https://www.google.com/search?q=imagens+viagens+e+turismo+lindo++mundo+gratis&tbm=isch&ved=2ahUKEwj1n5KT5JXsAhV2BLkGHfA7BtYQ2-cCegQIABAA&oq=imagens+viagens+e+turismo+lindo++mundo+gratis&gs_lcp=CgNpbWcQAzoECCMQJ1DwlgFYvqEBYN2kAWgAcAB4AIABlwGIAZoGkgEDMi41mAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=-At3X_XDDvaI5OUP8PeYsA0&bih=576&biw=1349&hl=pt-BR" role="button">Veja mais imagens</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="academia.jpg" alt="building1" width="1000" height="249" />
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+          <div class="container">
+            <div class="carousel-caption text-right">
+              <h2>Site para Academia</h2>
+              <p5> Site criado com as  linguagens de programação e biblioteca mais usada do mercado, site responsivo para qualquer tamanho de tela e com as melhores imagens. </p5>
+              <p><a class="btn btn-lg btn-primary" href="https://www.bing.com/images/search?q=imagens+academia&qpvt=imagens+academia&form=IGRE&first=1&scenario=ImageBasicHover" role="button">Veja mais imagens</a></p>
+            </p>
+          </div>
+        </div>
+            </div>
+            </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Próximo</span>
+    </a>
+  </div>
+  
+  <h4>Saiba mais sobre as linguagens de programação <br> e framework que será utilizada, para <br> a criação do seu site.</h4>
+
+<br>
+
+   <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+  <div class="container marketing">
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="html.png" alt="building1" width="140" height="140" />
+
+        <h2>HTML5</h2>
+        <p>HTML significa Hypertext Markup Language. ... O HTML não é uma linguagem de programação, isso significa que não pode ser usado para criar funcionalidades dinâmicas. Entretanto, o HTML possibilita a organização e formatação de documentos, similar ao Microsoft Word.</p>
+        <p><a class="btn btn-secondary" href="https://www.w3schools.com/html/" role="button">Ver detalhes &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="css.png" alt="building1" width="140" height="140" />
+        <h2>CSS3</h2>
+        <p>CSS é a sigla para o termo em inglês Cascading Style Sheets que, traduzido para o português, significa Folha de Estilo em Cascatas. O CSS é fácil de aprender e entender e é facilmente utilizado com as linguagens de marcação HTML ou XHTML.</p>
+        <p><a class="btn btn-secondary" href="https://www.w3schools.com/Css/" role="button">Ver detalhes&raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        
+        <img src="java.png" alt="building1" width="140" height="140" />
+        <h2>JavaScript</h2>
+        <p>JavaScript é uma linguagem de programação baseada em scripts e padronizada pela ECMA International (associação especializada na padronização de sistemas de informação). Foi criada por Brendan Eich (Netscape) e surgiu em 1995 como linguagem de script client-side de páginas web.</p>
+        <p><a class="btn btn-secondary" href="https://www.devmedia.com.br/guia/javascript/34372" role="button">Ver detalhes &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+   
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Conheça meu trabalho <span class="text-muted"></span></h2>
+        <p class="lead"> Site, Portai, Blog, Portfólio e loja Virtual. Esses são alguns dos serviços que presto aos meus clientes.</p>
+      </div>
+      <div class="col-md-5">
+         <video width="400" height="350" controls>
+          <source src="Macbook - 19454.mp4" type="video/mp4">
+          <source src="Macbook - 19454.mp4" type="video/ogg">
+        </video>
+
+      </div>
+    </di>
+    </div>
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">
+          <h2 class="featurette-heading">Design Responsivo. <span class="text-muted"></span></h2>
+          <span class="text-muted">
+            </span></h2>
+        <p class="lead">Sites responsivos são aqueles que adaptam o tamanho das suas páginas (alteração do layout) ao tamanho das telas que estão sendo exibidos, como as telas de celulares e tablets. Suas vantagens derivam da adaptação a qualquer ferramenta que os usuários estejam usando para facilitar a sua visualização.</p>
+      </div>
+      <div class="col-md-5">
+      <img src="video.gif" alt="" width="400" height="350" />
+      </div>
+    </div>
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Site para sua <span class="text-muted">Loja </span></h2>
+        <p class="lead">Com A loja virtual no website da sua empresa permitira realizar todo o processo de negociações de compra e de venda de produtos ou de serviços por meio da internet, desde a escolha até o pagamento.</p>
+      </div>
+  
+      <div class="col-md-5">
+        <img src="loja.jpg" alt="" width="400" height="350" />
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">
+          Sites Institucionais <span class="text-muted"> Modernos
+            </span></h2>
+      </div>
+      <div class="col-md-5">
+      <img src="universidade.jpg" alt="" width="400" height="350" />
+      </div>
+    </div>
+
+  
+  
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container parte 2----------------------------------------------------------------->
+
+  
+<!------------------------------------inicio do blog------------------------------------------------>
+
+</div>
+<main role="main" class="container">
+  <div class="row">
+  <div class="col-md-8 blog-main">
+    <h3 class="pb-4 mb-4 font-italic border-bottom">
+      SEU SITE  RESPONSIVO
+    </h3>
+    <div class="blog-post">
+      <h2 class="blog-post-title">O FUTURO DA SUA EMPRESA ESTÁ AQUI.</h2>
+      <p class="blog-post-meta">Fevereiro de 2021 <a href="#">Fevereiro</a></p>
+      <p>Esta postagem do blog mostra alguns tipos diferentes de conteúdo que são compatíveis e estilizados com Bootstrap. Tipografia, imagens e código básicos são suportados.</p>
+  
+        <p>Site Institucional
+          O site institucional é o mais usado pela maioria das empresas. Ele é composto, basicamente, por algumas páginas de informações sobre o negócio, serviços e produtos, preços, e formas de contato. Esse tipo de site é praticamente um cartão de visitas online.
+    </div><!-- /.blog-post -->
+  
+    <div class="blog-post">
+      <h2 class="blog-post-title">Site dinâmico</h2>
+      <p class="blog-post-meta">23 de Agosto de 2021 por <a href="#">Wesley</a></p>
+  
+      <p>Em contraste com o site Institucional, como o próprio nome diz, este tipo oferece mais dinamismo e permite que alterações sejam feitas de maneira mais fácil. O conteúdo pode ser constantemente atualizado, fazendo com o que o site permaneça renovado.
+
+        Nos sites dinâmicos, além do conteúdo institucional, há a incorporação de um blog, o que dá a oportunidade para que a empresa possa investir em Marketing de Conteúdo e em Otimização para Buscadores (SEO) – duas ferramentas essenciais para atrair clientes em potencial no meio online, além de fortalecer a relação com a audiência, e atrair e nutrir os leads.
+        
+        E por serem de fácil atualização e adaptação, sites dinâmicos costumam ser integrados às redes sociais, possibilitando a troca de conteúdo entre mídias – você pode postar vídeos, imagens, infográficos de outras mídias em seu site com rapidez e facilidade.</p>
+    </div><!-- /.blog-post -->
+  
+    <div class="blog-post">
+      <h2 class="blog-post-title">
+        E-Commerce
+      </h2>
+      <p class="blog-post-meta">23 de Agosto de 2021 por <a href="#">Wesley</a></p>
+  
+      <p>Também chamados de sites de comércio eletrônico, por meio de eCommerce é que é possível vender ou comprar um produto; ou contratar um serviço diretamente do computador. Um site de e-commerce é excelente para comerciantes e lojistas que pretendem expandir seus negócios, exibindo suas vitrines também no ambiente online. Eles são construídos com sistemas de verificação que permitem que o consumidor encomende diretamente da loja online, com rapidez e de forma bastante segura e intuitiva. Entretanto vale destacar que manter um eCommerce requer tempo para atualização constante da loja (incluir produtos, alterar preços, cadastrar dimensões e peso do produto para cálculo de frete, etc).</p>
+      <ul>
+        <h4>Líder na indústria de Tecnologia</h4><p>Trabalho com criação de web sites há 2  anos . E tenho orgulho em compartilhar a  experiência que adquirir durante a minha gradução. </p>
+        <h2>Qualidade garantida.</h2> <p>Buscar atalhos não é uma opção.  A criação , do começo ao fim. Sem desculpas e sem atalhos.</p>
+        <h2>Grandes expectativas.</h2> <p>Busque o topo e você vai alcançá-lo. Este é o  lema e minha experiência.</p>
+      </ul>
+    </div><!-- /.blog-post -->
+    <nav class="blog-pagination">
+      <a class="btn btn-outline-primary" type="submit" href="MaisVelho">
+        Mais velho</a>
+      <a class="btn btn-outline-primary disabled" type="submit" href="MaisRecente" tabindex="-1" aria-disabled="true">Mais recente</a>
+    </nav>
+  </div><!-- /.blog-main -->
+  <aside class="col-md-4 blog-sidebar">
+    <div class="p-4 mb-3 bg-light rounded">
+      <h4 class="font-italic">Deixe eu, ajudá-lo
+        a expandir seu negócio!</h4>
+      <p class="mb-0">Profissional qualificado está aqui para ajudá-lo em cada passo do caminho. Facilitar sua vida é a minha  prioridade.</p>
+    </div>
+    <div class="p-4">
+      <h4 class="font-italic">Arquivos</h4>
+      <ol class="list-unstyled mb-0">
+        <li><a href="janeiro.html">Janeiro 2021</a></li>
+        <li><a href="#">Fevereiro 2021</a></li>
+        <li><a href="#">Março 2021</a></li>
+        <li><a href="#">Abril 2021</a></li>
+        <li><a href="#">Maio 2021</a></li>
+        <li><a href="#">Junho 2021</a></li>
+        <li><a href="#">Julho 2021</a></li>
+        <li><a href="#">Agosto 2021</a></li>
+        <li><a href="#">Setembro 2021</a></li>
+        <li><a href="#">Outubro 2021</a></li>
+        <li><a href="#">Novembro 2021</a></li>
+        <li><a href="#">Dezembro 2021</a></li>
+      </ol>
+    </div>
+      </ol>
+    </div>
+  </aside><!-- /.blog-sidebar -->
+  
+  </div><!-- /.row -->
+  
+  </main><!-- /.container -->
+  
+  <footer class="blog-footer">
+    <div class="p-4">
+      <h4 class="font-italic">Encontre-me</h4>
+      <ol class="list-unstyled">
+        <ul class="list-unstyled">
+          <li><a href="https://www.facebook.com/profile.php?id=100036754243412" class="text-white">Facebook</a></li>
+          <li><a href="https://wa.me/5511988574097" class="text-white">whatsapp</a></li>
+          <li><a href="https://www.instagram.com/wsdesenvolvedor/" class="text-white">Instagram</a></li>
+         
+        </ul>
+  </div> 
+  <div class="dmRespRow u_1696802877" style="text-align: center;" id="1696802877">
+    <div class="dmRespColsWrapper" id="1878718465">
+        <div class="dmRespCol small-12 medium-12 large-12 u_1973306902 content-removed" id="1973306902">
+            <div class="u_1023566838 dmNewParagraph" data-dmtmpl="true" id="1023566838" style="transition: opacity 1s ease-in-out;" data-uialign="center">
+                <div style="text-align: left;">
+                    <font style="color: rgb(255, 255, 255);"><span style="font-weight: 600;">Siga-me</span></font>
+                </div>
+            </div>
+            <div class="u_1089895532 align-center text-align-center dmSocialHub" id="1089895532" dmle_extension="social_hub" data-element-type="social_hub" wr="true" networks="" icon="true" surround="true" adwords="" data-editor="eyJ0aXRsZSI6IiIsImRpc3BsYXlUaXRsZSI6dHJ1ZSwiZm9yY2VEaXNwbGF5IjpmYWxzZSwibGF5b3V0IjoiIiwibmV0d29ya3MiOlt7InVybCI6Imh0dHBzOi8vd3d3LmZhY2Vib29rLmNvbS9wcm9maWxlLnBocD9pZD0xMDAwMzY3NTQyNDM0MTIiLCJvcmRlciI6MCwiaWQiOiJmYWNlYm9vayIsImljb25fY2xhc3MiOiIiLCJpY29uX2N1c3RvbSI6IiIsImRhdGFWYWx1ZSI6e319LHsidXJsIjoiaHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS93c2Rlc2Vudm9sdmVkb3J3ZWIvIiwib3JkZXIiOjEsImlkIjoiaW5zdGFncmFtIiwiaWNvbl9jbGFzcyI6IiIsImljb25fY3VzdG9tIjoiIiwiZGF0YVZhbHVlIjp7fX0seyJ1cmwiOiJodHRwczovL3d3dy55b3V0dWJlLmNvbS9jaGFubmVsL1VDM09wa3VYRHBkWXp2VzczbkVWN01ydy8iLCJvcmRlciI6MiwiaWQiOiJ5b3V0dWJlIiwiaWNvbl9jbGFzcyI6IiIsImljb25fY3VzdG9tIjoiIiwiZGF0YVZhbHVlIjp7fX0seyJ1cmwiOiI1NTExOTg4NTc0MDk3Iiwib3JkZXIiOjUsImlkIjoid2hhdHNhcHAiLCJpY29uX2NsYXNzIjoiIiwiaWNvbl9jdXN0b20iOiIiLCJkYXRhVmFsdWUiOnt9fV0sImljb25zX3N0eWxlIjoiMiIsImFsbF9wYWdlcyI6ZmFsc2V9">
+                <div class="socialHubWrapper">
+                    <div class="socialHubInnerDiv ">
+                        <a href="https://www.facebook.com/profile.php?id=100036754243412" target="_blank" dmle_dont_remove="target" dm_dont_rewrite_url="true"> <span class="dmSocialFacebook dm-social-icons-facebook oneIcon socialHubIcon style2" data-hover-effect=""></span>
+                        </a>
+                        <a href="https://www.instagram.com/wsdesenvolvedorweb/" target="_blank" dmle_dont_remove="target" dm_dont_rewrite_url="true"> <span class="dmSocialInstagram dm-social-icons-instagram oneIcon socialHubIcon style2" data-hover-effect=""></span>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UC3OpkuXDpdYzvW73nEV7Mrw/" target="_blank" dmle_dont_remove="target" dm_dont_rewrite_url="true"> <span class="dmSocialYoutube dm-social-icons-youtube oneIcon socialHubIcon style2" data-hover-effect=""></span>
+                        </a>
+                        <a href="https://wa.me/5511988574097" target="_blank" dmle_dont_remove="target" dm_dont_rewrite_url="true"> <span class="dmSocialWhatsapp dm-social-icons-whatsapp oneIcon socialHubIcon style2" data-hover-effect=""></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+      
+  <!--------------------------------- Inicio do Product------------------------------------------------------------>
+  
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/product/">
+  
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="product.css" rel="stylesheet">
+  </head>
+  <body>
+  <nav class="site-header sticky-top py-1">
+  <div class="container d-flex flex-column flex-md-row justify-content-between">
+  <a class="py-2" href="logins.php" aria-label="login.html">Já possui cadastro clique aqui para logar</a>
+    <img src="wesley4.png"  alt="" width="60" height="60"fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/>
+  
+  </a>
+  <a class="py-2 d-none d-md-inline-block" href="logins.php">Já possui cadastro clique aqui para logar</a>
+  <a class="py-2 d-none d-md-inline-block" href="#"></a>
+  <a class="py-2 d-none d-md-inline-block" href="#"></a>
+  <a class="py-2 d-none d-md-inline-block" href="#"></a>
+  <a class="py-2 d-none d-md-inline-block" href="#"></a>
+  <a class="py-2 d-none d-md-inline-block" href="#"></a>
+  <a class="py-2 d-none d-md-inline-block" href="#"></a>
+  </div>
+  </nav>
+  
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+  <div class="col-md-5 p-lg-5 mx-auto my-5">
+  <h1 class="display-4 font-weight-normal">Seu site profissional</h1>
+  <p class="lead font-weight-normal">
+   Com as melhores e mais modernas ferramentas disponíceis para lhe propocionar a melhor experiência e  ainda mais inteligente.</p>
+  <a class="btn btn-outline-secondary" href="#">Saiba Mais</a>
+  </div>
+  <div class="product-device shadow-sm d-none d-md-block"></div>
+  <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+  </div>
+  
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+  <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+  <div class="my-3 py-3">
+    <h2 class="display-5">
+      Em beve novo título</h2>
+    <p class="lead">
+     Em breve mais informações.</p>
+  </div>
+  <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+  </div>
+  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+  <div class="my-3 p-3">
+    <h2 class="display-5">
+      Em beve novo título</h2>
+    <p class="lead">
+      Em breve mais informações.</p>
+  </div>
+  <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+  </div>
+  </div>
+  
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+  <div class="my-3 p-3">
+    <h2 class="display-5">Em beve novo título</h2>
+    <p class="lead">
+      Em breve mais informações.</p>>
+  </div>
+  <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+  </div>
+  <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+  <div class="my-3 py-3">
+    <h2 class="display-5"> Em beve novo título</h2>
+    <p class="lead">
+      Em breve mais informações.</p>
+  </div>
+  <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+  </div>
+  </div>
+  
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+  <div class="my-3 p-3">
+    <h2 class="display-5">Em beve novo título</h2>
+    <p class="lead">
+      Em breve mais informações.</p>
+  </div>
+  <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+  </div>
+  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+  <div class="my-3 py-3">
+    <h2 class="display-5">Em beve novo título</h2>
+    <p class="lead">
+      Em breve mais informações.</p>
+  </div>
+  <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+  </div>
+  </div>
+  
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+  <div class="my-3 p-3">
+    <h2 class="display-5">Em beve novo título</h2>
+    <p class="lead">
+      Em breve mais informações.</p>
+  </div>
+  <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+  </div>
+  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+  <div class="my-3 py-3">
+    <h2 class="display-5">Em beve novo título</h2>
+    <p class="lead">
+      Em breve mais informações.</p>
+  </div>
+  <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+  </div>
+  </div>
+  
+  <footer class="container py-5">
+  <div class="row">
+  <div class="col-12 col-md">
+    <img src="wesley4.png"  alt="" width="180" height="180">
+    
+  </div>
+  
+  <!-----------------------
+  novo site 
+  
+  ------->
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="pricing.css" rel="stylesheet">
+  </div>
+  <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <h1 class="display-4">Preços</h1>
+  <p class="lead">Crie rapidamente uma tabela de preços eficaz para seus clientes em potencial.</p>
+  </div>
+  
+  <div class="container">
+  <div class="card-deck mb-3 text-center">
+  <div class="card mb-4 shadow-sm">
+    <div class="card-header">
+      <h4 class="my-0 font-weight-normal">Gratuitamente</h4>
+    </div>
+    <div class="card-body">
+      <h1 class="card-title pricing-card-title">R$0 <small class="text-muted"></small></h1>
+      <ul class="list-unstyled mt-3 mb-4">
+        <li>10 Usuários Incluídos</li>
+        <li>2 GB de armazenamento</li>
+        <li>Email Suporte</li>
+        <li>Acesso ao centro de ajuda</li>
+      </ul>
+      <a href="formularios.html" class="btn btn-primary btn-block btn-primary">Cadastre-se</a>
+    </div>
+  </div>
+  <div class="card mb-4 shadow-sm">
+    <div class="card-header">
+      <h4 class="my-0 font-weight-normal">Pró</h4>
+    </div>
+    <div class="card-body">
+      <h1 class="card-title pricing-card-title">R$1.500 <small class="text-muted"></small></h1>
+      <ul class="list-unstyled mt-3 mb-4">
+        <li>20 Usuários Incluídos</li>
+        <li>10 GB de armazenamento</li>
+        <li>Email Suporte</li>
+        <li>Acesso ao centro de ajuda</li>
+      </ul>
+      <a href="formularios.html" class="btn btn-primary btn-block btn-primary">Iniciar</a>
+     
+    </div>
+  </div>
+  <div class="card mb-4 shadow-sm">
+    <div class="card-header">
+      <h4 class="my-0 font-weight-normal">Empreendimento</h4>
+    </div>
+    <div class="card-body">
+      <h1 class="card-title pricing-card-title">R$2.000 <small class="text-muted"></small></h1>
+      <ul class="list-unstyled mt-3 mb-4">
+        <li>30 Usuários Incluídos</li>
+        <li>15 GB de armazenamento</li>
+        <li>Telefone e Email Suporte</li>
+        <li>Acesso ao centro de ajuda</li>
+      </ul>
+      <a href="formularios.html" class="btn btn-primary btn-block btn-primary">Contate-Nos</a>
+    </div>
+  </div>
+  </div>
+  
+  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+  <div class="row">
+    <div class="col-12 col-md">
+      <img class="mb-2"src="wesley-removebg-preview.png" alt="building1" width="28" height="28">
+      <small class="d-block mb-3 text-muted">&copy; 2020-2021</small>
+    </div>
+  
+  
+  <!------------------>
+  
+  <div class="col-6 col-md">
+    <h5>Recursos</h5>
+    <ul class="list-unstyled text-small">
+      <li><a class="text-muted" href="#">Coisas legais</a></li>
+      <li><a class="text-muted" href="#">Recurso aleatório</a></li>
+      <li><a class="text-muted" href="#">Recurso de equipe</a></li>
+      <li><a class="text-muted" href="#">Coisas para desenvolvedores</a></li>
+      <li><a class="text-muted" href="#">Outro</a></li>
+      <li><a class="text-muted" href="#">Última vez</a></li>
+    </ul>
+  </div>
+  <div class="col-6 col-md">
+    <h5>Recursos</h5>
+    <ul class="list-unstyled text-small">
+      <li><a class="text-muted" href="#">Recurso</a></li>
+      <li><a class="text-muted" href="#">Nome do recurso</a></li>
+      <li><a class="text-muted" href="#">Outro recurso</a></li>
+      <li><a class="text-muted" href="#">Recurso final</a></li>
+    </ul>
+  </div>
+  <div class="col-6 col-md">
+    <h5>Recursos</h5>
+    <ul class="list-unstyled text-small">
+      <li><a class="text-muted" href="#">O negócio</a></li>
+      <li><a class="text-muted" href="#">Educação</a></li>
+      <li><a class="text-muted" href="#">Governo</a></li>
+      <li><a class="text-muted" href="#">Jogos</a></li>
+    </ul>
+  </div>
+  </footer>
+  <div class="container" >
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    
+    
+    <p class="mb-1">&copy; Copyright 2020 Wesley Desenvolvedor Web | Todos os direitos reservados.</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacidade</a></li>
+      <li class="list-inline-item"><a href="#">Termos</a></li>
+      <li class="list-inline-item"><a href="mailto: wesleydesenvolvedorweb@gmail.com">Apoio</a></li>
+    </ul>
+   
+  </div> 
+  </div> 
+  </div> 
+   <span id="1248212910"></span> 
+  </div> 
+   <div class="u_1259492280 dmRespCol large-6 medium-6 small-12" id="1259492280"> <span id="1284570987"></span> 
+   <div class="u_1738581776 dmSpacer" id="1738581776" data-element-type="spacer"></div> 
+  </div> 
+  </div>
+  </footer>
+  
+      <a href="#">Voltar ao topo</a>
+   
+    </div>
+  
+  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="javascritp.js"></script>
+  </html>
