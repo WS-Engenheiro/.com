@@ -1,6 +1,6 @@
 <?php
 session_start();
-//print_r($_SESSION);
+print_r($_SESSION);
 if ((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true))
 {
     unset($_SESSION['email']);
@@ -39,7 +39,7 @@ $logado = $_SESSION['email'];
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="d-flex">
-        <a href=""class="btn btn-danger me-5 ">Sair</a>
+        <a href="sair.php"class="btn btn-danger me-5 ">Sair</a>
 
     </div>
   </div>
@@ -47,7 +47,7 @@ $logado = $_SESSION['email'];
 <br>
 <br>
 <?php
-echo "<h1> Bem Vindo: <u>$logado</u></h1>"
+echo "<h1> Bem Vindo: <u>$logado</u></h1>";
 
 ?>
 </body>

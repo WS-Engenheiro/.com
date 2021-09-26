@@ -60,27 +60,30 @@
       <div class="bg"></div>
       <div class="bg"></div>
     <form class="form-signin">
+    <form action="testLogin.php" method="post">
       <img src="logo.png"  alt="" width="170" height="170">
   <h1 class="h3 mb-3 font-weight-normal">Por favor, faça o login</h1>
-  <form action="testLogin.php" method="post">
+  
   <label for="inputEmail" class="sr-only">Endereço de e-mail</label>
-  <input type="email" id="inputEmail" class="form-control" placeholder="Endereço de e-mail" required autofocus>
+  <input type="email" name="email" class="form-control" placeholder="Endereço de e-mail" required autofocus>
   <br>
-  <label for="inputSenha" class="sr-only">Senha</label>
-  <input type="senha" id="inputSenha" class="form-control" placeholder="Senha" required autofocus> 
+  <label for="senha" class="sr-only">Senha</label>
+  <input type="password"  name="senha" class="form-control" placeholder="Senha" required autofocus> 
   <div class="checkbox mb-3">
     <label>
       <input type="checkbox" value="lembrar de mim"> Lembrar de mim
     </label>
   </div>
  
-  <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Enviar</button>
   <footer>
 <div>
   </div>
-    
+
 <div class="card-body"> <div class="card-body">
   <a href="index.html" class="btn btn-outline-danger  fas fa-hand-pointer" aria-hidden="true"> Sair da página</a>
+ 
+
 </button>
 
 
