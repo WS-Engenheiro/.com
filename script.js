@@ -34,7 +34,7 @@ $(document).ready(function(){
   });
 
   var typed = new Typed(".typing", {
-      strings: ["Desenvolvedor Web" , "Analista de Sistemas ", " Futuro Engenheiro da Computação", ],
+      strings: ["Desenvolvedor Web" , " Futuro Engenheiro da Computação", ],
       typeSpeed: 100,
       backSpeed: 60,
       loop: true
