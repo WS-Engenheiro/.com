@@ -542,6 +542,7 @@ h3 {
 }
 
 .icon {
+  
     width: 70px;
     height: 70px;
     margin: -14px;
@@ -561,6 +562,9 @@ h3 {
     transition: all 0.3s ease;
 }
 
+
+
+
 .fa-github {
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -574,6 +578,16 @@ h3 {
 
 
 
+.fa-instagram {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.fa-instagram:hover {
+    text-decoration: none;
+    color: #00FFFF;
+    transition: all 0.3s ease;
+}
 
 /* style formulario-----*/
 
