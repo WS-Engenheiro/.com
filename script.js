@@ -34,9 +34,9 @@ $(document).ready(function(){
   });
 
   var typed = new Typed(".typing", {
-      strings: ["Desenvolvedor Web", " Futuro Engenheiro da Computação", ],
-      typeSpeed: 100,
-      backSpeed: 60,
+      strings: ["Desenvolvedor Web", " Futuro Engenheiro da Computação"],
+      typeSpeed: 90,
+      backSpeed: 50,
       loop: true
   });
 
