@@ -563,6 +563,16 @@ h3 {
 }
 
 
+.fa-instagram {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.fa-instagram:hover {
+    text-decoration: none;
+    color: #00FFFF;
+    transition: all 0.3s ease;
+}
 
 
 .fa-github {
@@ -578,16 +588,6 @@ h3 {
 
 
 
-.fa-instagram {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-
-.fa-instagram:hover {
-    text-decoration: none;
-    color: #00FFFF;
-    transition: all 0.3s ease;
-}
 
 /* style formulario-----*/
 
@@ -727,4 +727,10 @@ transform: translateX(25%);
     }
   }
   
-  
+  .fixed-top {
+    position: fixed;
+    top: 0;
+    right: 39px;
+    left: 0px;
+    z-index: 1030;
+}
