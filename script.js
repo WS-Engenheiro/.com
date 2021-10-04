@@ -33,12 +33,16 @@ $(document).ready(function(){
       $('.menu-btn i').toggleClass("active");
   });
 
+
+
   var typed = new Typed(".typing", {
-      strings: ["Seja bem vindo ao meu site!!!", "  Os melhores sites está aqui..." , "  Solicite seu orçamento."],
-      typeSpeed: 90,
-      backSpeed: 50,
-      loop: true
-  });
+    strings: ["Seja bem vindo ao meu site!!!", "  Os melhores sites está aqui..." , "  Solicite seu orçamento.",],
+    typeSpeed: 90,
+    backSpeed: 50,
+    loop: true
+});
+
+
 
   // owl carousel script
   $('.carousel').owlCarousel({
