@@ -203,7 +203,7 @@ section .title{
 .home .home-content .text-2{
     font-size: 60px;
     font-weight: 600;
-    margin-left: 6px;
+    margin-left: -3px;
     margin-bottom: 140px;
   }
 
@@ -224,7 +224,6 @@ section .title{
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
-    margin-left: 6;
     font-weight: 400;
     border-radius: 6px;
     border: 2px solid rgb(0, 197, 204);
@@ -785,4 +784,12 @@ transform: translateX(-25%);
    100% {
 transform: translateX(25%);
     }
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 39px;
+    left: 0px;
+    z-index: 1030;
 }
