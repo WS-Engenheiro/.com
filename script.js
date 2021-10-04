@@ -34,7 +34,7 @@ $(document).ready(function(){
   });
 
   var typed = new Typed(".typing", {
-      strings: ["Seja bem vindo ao meu site!!!", " Os melhores sites está aqui..","Solicite seu orçamento."],
+      strings: ["Seja bem vindo ao meu site!!!",],
    
 
       typeSpeed: 90,
