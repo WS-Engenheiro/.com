@@ -80,7 +80,7 @@ section .title{
     position: fixed;
     width: 100%;
     z-index: 999;
-    padding: 0px 50px;
+    padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
 }
@@ -224,7 +224,7 @@ section .title{
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
-    margin-left: 6px;
+    margin-left: 6;
     font-weight: 400;
     border-radius: 6px;
     border: 2px solid rgb(0, 197, 204);
@@ -785,12 +785,4 @@ transform: translateX(-25%);
    100% {
 transform: translateX(25%);
     }
-}
-
-.fixed-top {
-    position: absolute;
-    top: 0;
-    right: 39px;
-    left: 0px;
-    z-index: 1030;
 }
