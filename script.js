@@ -34,7 +34,7 @@ $(document).ready(function(){
   });
 
   var typed = new Typed(".typing", {
-      strings: ["Desenvolvedor Web", " Futuro Engenheiro da Computação"],
+      strings: ["Seja bem vindo ao meu site!!!", "  Os melhores sites está aqui..." , "  Solicite seu orçamento."],
       typeSpeed: 90,
       backSpeed: 50,
       loop: true
