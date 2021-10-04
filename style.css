@@ -80,7 +80,7 @@ section .title{
     position: fixed;
     width: 100%;
     z-index: 999;
-    padding: 30px 0;
+    padding: 0px 50px;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
 }
@@ -791,6 +791,6 @@ transform: translateX(25%);
     position: fixed;
     top: 0;
     right: 39px;
-    left: 0px;
+    left: -40px;
     z-index: 1030;
 }
